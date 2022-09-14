@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans';
+}
+body{
+    background: url(img/background.png);
+    font-size: 14px;
+}
+.container{
+    max-width: 1100px;
+    padding: 0 20px;
+    margin: auto;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.container-logo{
+    display: flex;
+    align-items: center;
+}
+.container-logo i{
+    color: #088e49;
+    font-size: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 20px;
+}
+nav ul li a{
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: #088e49;
+}
+.busqueda{
+    background: #fff;
+    padding: 10px;
+    border-radius: 50px;
+}
+.busqueda i{
+    margin-left: 10px;
+}
+.busqueda input{
+    border: none;
+    outline: none;
+}
+.informacion{
+    margin-top: 50px;
+}
+.fila{
+    display: flex;
+}
+.fila .col{
+    width: 33%;
+}
+.fila .col h2{
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+.fila .col p{
+    color: #696969;
+    max-width: 300px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+.fila .col span{
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.fila .col button{
+    background-color: #1f2131;
+    color: #fff;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: .5s;
+}
+.fila .col button i{
+    color: #ff7e32;
+    background: fff;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.fila .col button:hover{
+    font-size: 14px;
+}
+.circulo-principal{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background: #f88965;
+    border-radius: 50%;
+    text-align: center;
+    transition: .5s;
+}
+.circulo-principal img{
+    height: 100%;
+    position: relative;
+    bottom: 30px;
+    transition: .5s;
+}
+.circulo-principal:hover{
+    transform: scale(.9);
+    background-color: #1f2131;
+}
+.circulo-principal:hover img{
+    transform: scale(1.2);
+}
+.ingredientes{
+    padding-left: 50px;
+}
+.ingredientes ul{
+    list-style: none;
+
+}
+.ingredientes li{
+    margin: 10px 0;
+}
+.ingredientes li i{
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    color: #088e49;
+    margin-right: 10px;
+}
+.rectangulo{
+    border-radius: 40px 40px 0 0;
+    background-color: #1f2131;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1100px;
+    width: 100%;
+    height: 150px;
+}
+.rectangulo .circulo{
+    width: 150px;
+    margin: auto;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+}
+.rectangulo .circulo img{
+    height: 100%;
+    position: relative;
+    bottom: 10px;
+}
+.rectangulo .opcion{
+    position: relative;
+    bottom: 70px;
+    text-align: center;
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+}
+.color1{
+    background-color: #f88965;
+}
+.color2{
+    background-color: #f1c072;
+}
+.color3{
+    background-color: #d46475;
+}
+.color4{
+    background-color: #398969;
+}
+.rectangulo .opcion:hover{
+    bottom: 90px;
+}
+.rectangulo .opcion .puntuacion{
+    background-color: #fff;
+    width: fit-content;
+    color: #000;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 14px;
+    padding: 3px;
+    border-radius: 5px;
+}
+.rectangulo .opcion h3{
+    padding: 5px;
+}
+.rectangulo .opcion a{
+    text-decoration: none;
+    color: #398969;
+}
+.rectangulo .opcion a:hover{
+    color: #3bfe00;
+}
+

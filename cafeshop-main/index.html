@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Cafe Shop</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Encabezado -->
+        <header>
+            <div class="container-logo">
+                <i class="fa-regular fa-circle-dot"></i>
+                <h1>CAFESHOP</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Tendencia</a></li>
+                    <li><a href="#">Promociones</a></li>
+                    <li><a href="#">Regalos</a></li>
+                    <li><a href="#">Reservas</a></li>
+                    <li><a href="#">Delivery</a></li>
+                </ul>
+            </nav>
+            <div class="busqueda">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Buscar">
+            </div>
+        </header>
+
+        <!-- INFORMACION -->
+        <div class="informacion">
+            <div class="fila">
+                <!-- columna izquierda -->
+                <div class="col">
+                    <h2 id="nombre">Frappé <br> de Chocolate</h2>
+                    <p id="descripcion">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta possimus fugiat praesentium debitis.
+                    </p>
+                    <span id="precio">$ 8.60</span>
+                    <button>
+                        Comprar Ahora
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </button>
+                </div>
+
+                <!-- Columna Central -->
+                <div class="col">
+                    <div class="circulo-principal" id="circulo">
+                        <img src="img/f1.png" alt="" id="fotoPrincipal">
+                    </div>
+                </div>
+
+                <!-- Columna derecha -->
+                <div class="col ingredientes">
+                    <ul id="ingredientes">
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Leche Entera
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Jarabe
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Hielo
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Salsa de Chocolate
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Chips de Chocolate
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Polvo de Cacao
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Crema Batida
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="rectangulo">
+            <div class="opcion" onclick="cargar(1)">
+                <div class="circulo color1">
+                    <img src="img/f1.png" alt="">
+                    <div class="puntuacion">
+                        4.9 <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <h3>Frappé de Chocolate</h3>
+                <a href="#">Agregar a la Orden +</a>
+            </div>
+            <div class="opcion" onclick="cargar(2)">
+                <div class="circulo color2">
+                    <img src="img/f2.png" alt="">
+                    <div class="puntuacion">
+                        4.9 <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <h3>Frappé de Vainilla</h3>
+                <a href="#">Agregar a la Orden +</a>
+            </div>
+            <div class="opcion" onclick="cargar(3)">
+                <div class="circulo color3">
+                    <img src="img/f3.png" alt="">
+                    <div class="puntuacion">
+                        4.9 <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <h3>Frappé de Frutilla</h3>
+                <a href="#">Agregar a la Orden +</a>
+            </div>
+            <div class="opcion" onclick="cargar(4)">
+                <div class="circulo color4">
+                    <img src="img/f4.png" alt="">
+                    <div class="puntuacion">
+                        4.9 <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <h3>Frappé de Te</h3>
+                <a href="#">Agregar a la Orden +</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
